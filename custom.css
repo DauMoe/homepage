@@ -21,7 +21,7 @@
 html {
     scroll-behavior: smooth;
     user-select: none;
-    overflow: hidden;
+    overflow-y: hidden;
 }
 
 body {
@@ -412,7 +412,7 @@ a, ul, li {
 }
 
 .show {
-    animation: show_menu .3s;
+    animation: show_menu .7s;
     top: 0;
 }
 
@@ -425,7 +425,7 @@ a, ul, li {
 }
 
 .close {
-    animation: close_menu .1s;
+    animation: close_menu .3s;
     top: -25rem
 }
 
@@ -894,5 +894,15 @@ input[type='checkbox'] {
 
     .social {
         width: 100%;
+    }
+}
+
+@media screen and (max-height: 550px) {
+    .preamble>h1 {
+        font-size: 45px;
+    }
+    
+    .preamble {
+        top: 8%;
     }
 }
