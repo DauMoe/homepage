@@ -412,7 +412,7 @@ a, ul, li {
 }
 
 .show {
-    animation: show_menu .7s;
+    animation: show_menu .3s;
     top: 0;
 }
 
@@ -425,7 +425,7 @@ a, ul, li {
 }
 
 .close {
-    animation: close_menu .3s;
+    animation: close_menu .1s;
     top: -25rem
 }
 
