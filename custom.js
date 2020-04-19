@@ -11,7 +11,7 @@ setTimeout(() => {
 
 setTimeout(() => {
 	loading.style.display = 'none';
-	html.style.overflow = 'auto';
+	html.style.overflowY = 'auto';
 }, 6000);
 
 hide_menu = () => {
