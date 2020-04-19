@@ -403,12 +403,13 @@ a, ul, li {
 .menu_burger {
     text-align: center;
     position: fixed;
-    top: -25rem;
+    top: -50rem;
     right: 0;
     z-index: 10;
     width: 100%;
     background-color: #db6464;
     height: 25rem;
+    display: none;
 }
 
 .show {
