@@ -6,17 +6,12 @@ let navbar_burger = document.querySelector('.navbar_burger');
 
 html.scrollTop = (0, 0);
 let i = 0;
+hide_menu = () => {
+	menu_burger.classList.add('close');
+	menu_burger.classList.remove('show');
+}
 window.onload = () => {
 	loading.classList.add('disable');
-	setTimeout(() => {
-		html.style.overflowY = 'auto';
-	}, 3000);
-
-	hide_menu = () => {
-		menu_burger.classList.add('close');
-		menu_burger.classList.remove('show');
-	}
-
 	close_menu.addEventListener('click', hide_menu)
 	menu_burger.addEventListener('click', hide_menu)
 
@@ -24,6 +19,12 @@ window.onload = () => {
 		menu_burger.classList.remove('close');
 		menu_burger.classList.add('show');
 	})
-	
+	window.addEventListener('click', () => {
+		if (i==6) {
+			i = -1;
+		}
+		i++;
+		window.scrollTo(0, i* window.innerHeight);
+	})
 }
 
