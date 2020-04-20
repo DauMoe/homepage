@@ -5,10 +5,10 @@ let menu_burger = document.querySelector('.menu_burger');
 let navbar_burger = document.querySelector('.navbar_burger');
 
 html.scrollTop = (0, 0);
+let i = 0;
 window.onload = () => {
 	loading.classList.add('disable');
 	setTimeout(() => {
-		loading.style.display = 'none';
 		html.style.overflowY = 'auto';
 	}, 3000);
 
@@ -24,5 +24,6 @@ window.onload = () => {
 		menu_burger.classList.remove('close');
 		menu_burger.classList.add('show');
 	})
+	
 }
 
